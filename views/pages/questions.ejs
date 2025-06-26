@@ -1,0 +1,16 @@
+<%- include('../partials/header') %>
+  <section>
+    <h2>Sample Questions</h2>
+    <% groupedQuestions.forEach(group => { %>
+      <h3><%= group.subject %> • Class <%= group.class_level %></h3>
+      <div class="cards">
+        <% group.questions.forEach(q => { %>
+          <div class="card">
+            <h4>Q<%= q.id %></h4>
+            <p><%= q.question_text %></p>
+          </div>
+        <% }) %>
+      </div>
+    <% }) %>
+  </section>
+<%- include('../partials/footer') %>

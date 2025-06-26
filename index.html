@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZZICLES - 2nd Edition | Math & Physics Competition</title>
+    <meta name="description" content="QUIZZICLES - Annual Mathematics and Physics Competition for Classes 8-12 and UG 1st Year. Join the 2nd Edition!">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">QUIZZICLES</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#questions" class="nav-link">Sample Questions</a>
+                <a href="#edition" class="nav-link">2nd Edition</a>
+                <a href="#team" class="nav-link">Team</a>
+                <a href="#sponsors" class="nav-link">Sponsors</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Marquee Announcement -->
+    <div class="marquee-container">
+        <div class="marquee">
+            <span>🎉 QUIZZICLES 2nd Edition - Registration Opening Soon! | Math & Physics Competition for Classes 8-12 & UG 1st Year | Stay Tuned for Updates! 🎉</span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" id="hero-title">
+                    <span class="letter q">Q</span>
+                    <span class="letter u">U</span>
+                    <span class="letter i">I</span>
+                    <span class="letter z1">Z</span>
+                    <span class="letter z2">Z</span>
+                    <span class="letter i2">I</span>
+                    <span class="letter c">C</span>
+                    <span class="letter l">L</span>
+                    <span class="letter e">E</span>
+                    <span class="letter s">S</span>
+                </h1>
+                <p class="hero-subtitle">Annual Mathematics & Physics Competition</p>
+                <p class="hero-description">Challenging minds from Classes 8-12 and UG 1st Year</p>
+                <div class="hero-buttons">
+                    <button class="btn btn--primary btn--lg" onclick="scrollToSection('edition')">Join 2nd Edition</button>
+                    <button class="btn btn--outline btn--lg" onclick="scrollToSection('about')">Learn More</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number" data-target="2">0</div>
+                        <div class="stat-label">Edition</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-target="500">0</div>
+                        <div class="stat-label">Expected Participants</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-target="2">0</div>
+                        <div class="stat-label">Subjects</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About QUIZZICLES</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>QUIZZICLES is an annual mathematics and physics competition designed to challenge and inspire young minds. Our competition targets students from Classes 8-12 and undergraduate 1st year, providing them with a platform to showcase their analytical and problem-solving skills.</p>
+                    <p>We believe in nurturing scientific temperament and mathematical thinking among students through carefully curated questions that test both conceptual understanding and application skills.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">📊</div>
+                            <h3>Mathematics</h3>
+                            <p>Algebra, Calculus, Geometry, and more</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">⚛️</div>
+                            <h3>Physics</h3>
+                            <p>Mechanics, Thermodynamics, Optics, and more</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">🏆</div>
+                            <h3>Recognition</h3>
+                            <p>Certificates, prizes, and scholarships</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sample Questions Section -->
+    <section id="questions" class="questions">
+        <div class="container">
+            <h2 class="section-title">Sample Questions</h2>
+            <div class="questions-tabs">
+                <button class="tab-btn active" onclick="showQuestions('physics')">Physics</button>
+                <button class="tab-btn" onclick="showQuestions('math')">Mathematics</button>
+            </div>
+            
+            <div class="questions-content" id="physics-questions">
+                <div class="question-card">
+                    <div class="question-number">Q1</div>
+                    <div class="question-text">A body of mass 4 kg is accelerated from rest by a constant force of 9 N. What is its speed when it has travelled a distance of 8 m?</div>
+                    <div class="options">
+                        <div class="option">A) 3.6 m/s</div>
+                        <div class="option">B) 4.5 m/s</div>
+                        <div class="option correct">C) 6.0 m/s</div>
+                        <div class="option">D) 18.0 m/s</div>
+                    </div>
+                </div>
+                <div class="question-card">
+                    <div class="question-number">Q2</div>
+                    <div class="question-text">An object is dropped from a height of 45 m. How long does it take to reach the ground? (g = 10 m/s²)</div>
+                    <div class="options">
+                        <div class="option">A) 2 s</div>
+                        <div class="option correct">B) 3 s</div>
+                        <div class="option">C) 4 s</div>
+                        <div class="option">D) 5 s</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="questions-content hidden" id="math-questions">
+                <div class="question-card">
+                    <div class="question-number">Q1</div>
+                    <div class="question-text">If log₂(x) = 3, then x equals:</div>
+                    <div class="options">
+                        <div class="option">A) 6</div>
+                        <div class="option correct">B) 8</div>
+                        <div class="option">C) 9</div>
+                        <div class="option">D) 12</div>
+                    </div>
+                </div>
+                <div class="question-card">
+                    <div class="question-number">Q2</div>
+                    <div class="question-text">The derivative of sin(2x) is:</div>
+                    <div class="options">
+                        <div class="option correct">A) 2cos(2x)</div>
+                        <div class="option">B) cos(2x)</div>
+                        <div class="option">C) -2cos(2x)</div>
+                        <div class="option">D) sin(2x)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2nd Edition Details -->
+    <section id="edition" class="edition">
+        <div class="container">
+            <h2 class="section-title">2nd Edition Details</h2>
+            <div class="edition-content">
+                <div class="edition-card">
+                    <div class="card__body">
+                        <h3>Competition Format</h3>
+                        <p>Online & Offline Rounds with a total duration of 3 hours</p>
+                        <div class="detail-item">
+                            <strong>Format:</strong> Online & Offline Rounds
+                        </div>
+                        <div class="detail-item">
+                            <strong>Duration:</strong> 3 Hours
+                        </div>
+                        <div class="detail-item">
+                            <strong>Prizes:</strong> Certificates, Cash Prizes, and Scholarships
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="edition-card">
+                    <div class="card__body">
+                        <h3>Important Dates</h3>
+                        <div class="dates-list">
+                            <div class="date-item">
+                                <span class="date-label">Registration Opens:</span>
+                                <span class="date-value">TBD</span>
+                            </div>
+                            <div class="date-item">
+                                <span class="date-label">Registration Closes:</span>
+                                <span class="date-value">TBD</span>
+                            </div>
+                            <div class="date-item">
+                                <span class="date-label">Competition Date:</span>
+                                <span class="date-value">TBD</span>
+                            </div>
+                            <div class="date-item">
+                                <span class="date-label">Results Announcement:</span>
+                                <span class="date-value">TBD</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="edition-card">
+                    <div class="card__body">
+                        <h3>Registration</h3>
+                        <p>Registration process details will be announced soon. Stay tuned for updates!</p>
+                        <div class="detail-item">
+                            <strong>Registration Fee:</strong> TBD
+                        </div>
+                        <div class="detail-item">
+                            <strong>Eligibility:</strong> Classes 8-12 & UG 1st Year
+                        </div>
+                        <button class="btn btn--primary btn--full-width" disabled>Registration Opening Soon</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2 class="section-title">Meet the Team</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar">DS</div>
+                    <div class="team-info">
+                        <h3>Dr. Sarah Johnson</h3>
+                        <p class="team-role">Competition Director</p>
+                        <p class="team-description">Professor of Mathematics with 15+ years of experience</p>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-avatar">MC</div>
+                    <div class="team-info">
+                        <h3>Prof. Michael Chen</h3>
+                        <p class="team-role">Physics Coordinator</p>
+                        <p class="team-description">Physics Department Head and Olympiad Trainer</p>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-avatar">ER</div>
+                    <div class="team-info">
+                        <h3>Dr. Emily Rodriguez</h3>
+                        <p class="team-role">Question Bank Coordinator</p>
+                        <p class="team-description">Specialist in Mathematical Problem Solving</p>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-avatar">AK</div>
+                    <div class="team-info">
+                        <h3>Alex Kumar</h3>
+                        <p class="team-role">Student Coordinator</p>
+                        <p class="team-description">Final Year Student and Former Participant</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section id="sponsors" class="sponsors">
+        <div class="container">
+            <h2 class="section-title">Our Sponsors</h2>
+            <div class="sponsors-grid">
+                <div class="sponsor-card">
+                    <div class="sponsor-category title-sponsor">Title Sponsor</div>
+                    <h3>MathTech Solutions</h3>
+                    <p>Leading educational technology company</p>
+                </div>
+                
+                <div class="sponsor-card">
+                    <div class="sponsor-category category-sponsor">Category Sponsor</div>
+                    <h3>Physics Academy</h3>
+                    <p>Premier physics coaching institute</p>
+                </div>
+                
+                <div class="sponsor-card">
+                    <div class="sponsor-category supporting-partner">Supporting Partner</div>
+                    <h3>StudyMate</h3>
+                    <p>Online learning platform</p>
+                </div>
+                
+                <div class="sponsor-card">
+                    <div class="sponsor-category academic-partner">Academic Partner</div>
+                    <h3>Local University</h3>
+                    <p>Host institution for the competition</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>Have questions about QUIZZICLES? We're here to help!</p>
+                    <div class="contact-item">
+                        <strong>Email:</strong> info@quizzicles.org
+                    </div>
+                    <div class="contact-item">
+                        <strong>Phone:</strong> +91 XXXX-XXXX-XX
+                    </div>
+                    <div class="contact-item">
+                        <strong>Address:</strong> Competition Headquarters (TBD)
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label class="form-label" for="name">Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="email">Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="your.email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="subject">Subject</label>
+                        <select id="subject" class="form-control">
+                            <option value="">Select a subject</option>
+                            <option value="registration">Registration Query</option>
+                            <option value="competition">Competition Details</option>
+                            <option value="sponsorship">Sponsorship</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="message">Message</label>
+                        <textarea id="message" class="form-control" rows="5" placeholder="Your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>QUIZZICLES</h3>
+                    <p>Annual Mathematics & Physics Competition</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="#about">About</a>
+                    <a href="#questions">Sample Questions</a>
+                    <a href="#team">Team</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <a href="#" target="_blank">Facebook</a>
+                    <a href="#" target="_blank">Twitter</a>
+                    <a href="#" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 QUIZZICLES. All rights reserved. | 2nd Edition</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

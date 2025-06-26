@@ -1,0 +1,37 @@
+<%- include('../partials/header') %>
+
+<section class="hero">
+  <h1>
+    <span>Q</span><span>U</span><span>I</span>ZZICLES
+  </h1>
+  <p>
+    Annual Maths & Physics Competition • Edition <%= editionNumber || '2' %> • For Classes 8–12 & UG 1st Year
+  </p>
+  <a href="/register" class="btn-primary">Register Now</a>
+</section>
+
+<section id="about">
+  <h2>About the Competition</h2>
+  <p>
+    QUIZZICLES is a unique platform for budding mathematicians and physicists to showcase their problem-solving prowess.
+    Participants from Class 8 to UG 1st Year compete in challenging quizzes designed by expert educators.
+    The competition fosters curiosity, analytical thinking, and collaborative learning.
+  </p>
+</section>
+
+<section id="sponsors">
+  <h2>Our Sponsors</h2>
+  <div class="sponsors-grid">
+    <% sponsors.forEach(s => { %>
+      <div class="sponsor-item">
+        <% if (s.logo_url) { %>
+          <img src="<%= s.logo_url %>" alt="<%= s.name %>">
+        <% } else { %>
+          <span><%= s.name %></span>
+        <% } %>
+      </div>
+    <% }) %>
+  </div>
+</section>
+
+<%- include('../partials/footer') %>

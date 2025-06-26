@@ -1,0 +1,15 @@
+<%- include('../partials/header') %>
+
+<section class="register-success">
+  <h2>🎉 <%= title %></h2>
+
+  <% if (error) { %>
+    <div class="error-message"><%= error %></div>
+  <% } else { %>
+    <p>Thank you for registering for <strong>QUIZZICLES</strong>. We’re excited to have you participate in this year’s competition.</p>
+  <% } %>
+
+  <a href="/" class="btn-primary">Go to Home</a>
+</section>
+
+<%- include('../partials/footer') %>

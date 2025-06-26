@@ -1,0 +1,38 @@
+<%- include('../partials/header') %>
+
+<section class="admin-dashboard">
+  <h2>Welcome to Admin Dashboard</h2>
+
+  <p><a href="/admin/logout" class="btn-secondary">Logout</a></p>
+
+  <section class="admin-section">
+    <h3>Announcements</h3>
+    <% if (announcements.length > 0) { %>
+      <ul class="admin-list">
+        <% announcements.forEach(a => { %>
+          <li><strong><%= a.title %></strong> - <%= a.message %></li>
+        <% }) %>
+      </ul>
+    <% } else { %>
+      <p>No announcements found.</p>
+    <% } %>
+  </section>
+
+  <section class="admin-section">
+    <h3>Contact Submissions</h3>
+    <% if (contacts.length > 0) { %>
+      <ul class="admin-list">
+        <% contacts.forEach(c => { %>
+          <li>
+            <strong><%= c.name %></strong> (<%= c.email %>)<br>
+            <em><%= c.message %></em>
+          </li>
+        <% }) %>
+      </ul>
+    <% } else { %>
+      <p>No contact messages received.</p>
+    <% } %>
+  </section>
+</section>
+
+<%- include('../partials/footer') %>

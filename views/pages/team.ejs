@@ -1,0 +1,14 @@
+<%- include('../partials/header') %>
+  <section>
+    <h2>Meet the Team</h2>
+    <div class="cards">
+      <% teamMembers.forEach(member => { %>
+        <div class="card">
+          <h3><%= member.name %></h3>
+          <p><strong><%= member.role %></strong></p>
+          <p><%= member.bio %></p>
+        </div>
+      <% }) %>
+    </div>
+  </section>
+<%- include('../partials/footer') %>

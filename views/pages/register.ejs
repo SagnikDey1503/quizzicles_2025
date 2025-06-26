@@ -1,0 +1,56 @@
+<%- include('../partials/header') %>
+
+<section>
+  <h2>Register for QUIZZICLES <%= editionNumber %> Edition</h2>
+  <p>Fill out the registration form below to participate. Fields marked * are mandatory.</p>
+
+  <% if (error) { %>
+    <div class="error-message"><%= error %></div>
+  <% } %>
+
+  <form action="/register" method="post" class="card" style="max-width:700px;margin:auto;">
+    <label>Student Name*: 
+      <input type="text" name="student_name" required>
+    </label><br>
+
+    <label>Email*: 
+      <input type="email" name="email" required>
+    </label><br>
+
+    <label>Phone*: 
+      <input type="tel" name="phone" required>
+    </label><br>
+
+    <label>School/College*: 
+      <input type="text" name="school_name" required>
+    </label><br>
+
+    <label>Class Level*: 
+      <select name="class_level" required>
+        <option value="">-- Select --</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="UG1">UG 1st Year</option>
+      </select>
+    </label><br>
+
+    <label>Guardian Name: 
+      <input type="text" name="guardian_name">
+    </label><br>
+
+    <label>Guardian Phone: 
+      <input type="tel" name="guardian_phone">
+    </label><br>
+
+    <label>Subjects Interested In: 
+      <input type="text" name="subjects" placeholder="e.g., Algebra, Optics">
+    </label><br>
+
+    <button type="submit" class="btn-primary">Submit Registration</button>
+  </form>
+</section>
+
+<%- include('../partials/footer') %>
