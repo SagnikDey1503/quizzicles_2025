@@ -14,7 +14,7 @@ const requireAuth = (req, res, next) => {
 
 // Admin login page
 router.get('/login', (req, res) => {
-    res.render('C:\\Users\\ajayd\\Downloads\\bib test\\views\\pages\\admin-login', {
+    res.render('pages/admin-login', {
         title: 'Admin Login - QUIZZICLES',
         error:null
     });
